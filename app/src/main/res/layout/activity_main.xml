@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.example.phodo.tictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="cursive"
+        android:text="Tic Tac Tiles!"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Player 1 turn"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="tileClicked"
+            android:padding="35sp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:onClick="newGame"
+        android:padding="20sp"
+        android:text="New Game" />
+
+</RelativeLayout>
